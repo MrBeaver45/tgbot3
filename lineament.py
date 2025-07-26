@@ -370,7 +370,7 @@ all_traits = {
 def get_random_ability(message):
     rarities = ["Обычная", "Редкая", "Эпическая", "Мифическая", "Легендарная"]
     # Шансы, указанные в задаче: 60%, 35%, 3.5%, 1.49%, 0.01%
-    weights = [60, 35, 3.5, 4.99, 0.01]
+    weights = [60, 35, 3.5, 0.99, 0.01]
 
     # Выбираем одну редкость на основе весов
     chosen_rarity = random.choices(rarities, weights=weights)[0]
